@@ -11,6 +11,8 @@ var g = [{ "q": "以下表述符合“感恩”价值观的是（）", "a": "A�
 var arr = [].concat(a, b, c, d, e, f, g)
 // console.log(arr);
 
+var newArr = Array.from(new Set(arr));
+
 for (var i = 0; i < arr.length; i++) {
    // 问题
    var q = arr[i].q
