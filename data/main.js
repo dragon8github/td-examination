@@ -26,7 +26,7 @@ for (var i = 0; i < newArr.length; i++) {
    for (var j = 0; j < _a.length; j++) {
    		aa += ` - ${_a[j]} \r\n`;
    }
-   fs.writeFileSync(path.join(__dirname, '../README.MD'), `#### ${i + 1}、${q} \r\n${aa}\r\n`, { flag: 'a' });
+   fs.writeFileSync(path.join(__dirname, '../README.MD'), `### ${i + 1}、${q} \r\n${aa}\r\n`, { flag: 'a' });
 }
 
 console.log('success!!' + newArr.length);
