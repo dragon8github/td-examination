@@ -13,11 +13,11 @@ var arr = [].concat(a, b, c, d, e, f, g)
 
 var newArr = Array.from(new Set(arr));
 
-for (var i = 0; i < arr.length; i++) {
+for (var i = 0; i < newArr.length; i++) {
    // 问题
-   var q = arr[i].q
+   var q = newArr[i].q
    // 答案
-   var a = arr[i].a
+   var a = newArr[i].a
    // 如果是多条答案的话，是按照 | 分开的。
    var _a = a.split('|')
    // 最终答案
@@ -31,4 +31,4 @@ for (var i = 0; i < arr.length; i++) {
    });
 }
 
-console.log('success!!');
+console.log('success!!' + newArr.length);
